@@ -139,7 +139,7 @@ jobs:
         cd host\build
         makensis -DBUILD_32BIT platform\Windows\installer.nsi
     - name: Upload Windows installer
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: Windows-Installer
         path: host/build/*.exe
